@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Google Images</title>
+	<style>
+		.alignRightButton {
+			color: #000000DE;
+			font-family: arial, sans-serif;
+			font-size: 13px;
+			margin: 30px;
+		}
+
+		.alignRightButton:hover {
+			color: #585858;
+		}
+
+		.margin {
+			margin-top: 11%;
+		}
+
+		.inputBar {
+			margin-top: 30px;
+			margin-bottom: 300px;
+			padding: 5px 8px 14px 16px;
+			width: 30%;
+			border-radius: 50px;
+			border: 1px solid lightgrey;
+		}
+
+		.headerBottom {
+			border: 1px solid lightgrey;
+		}
+
+		.bottomText {
+            color: #0000008a !important;
+            font-family: arial, sans-serif;
+            font-size: 15px;
+        }
+		p,
+        input[type="text"] {
+			padding: 10px;
+            font-family: arial, sans-serif;
+            font-size: 15px;
+            color: #222222;
+        }
+	</style>
+</head>
+
+<body>
+	<div align="right" class="mt-3">
+		<a href="index.html" class="alignRightButton">Google Search</a>
+	</div>
+	<div class="text-center margin">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Google_Images_2015_logo.svg"
+			alt="Google Images Logo" width="15%">
+		<form action="http://images.google.com/images">
+			<div>
+				<input type="text" class="inputBar" name="q">
+
+			</div>
+			<div>
+				<input type="hidden" name="btnK" value="Image Search">
+			</div>
+			<nav class="navbar fixed-bottom navbar-light bg-light headerBottom">
+				<a class="navbar-brand bottomText" href="#">English</a>
+			</nav>
+		</form>
+	</div>
+</body>
+
+</html>

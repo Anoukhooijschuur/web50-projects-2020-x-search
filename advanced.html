@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Advanced Search</title>
+    <style>
+        h1 {
+            font-family: arial, sans-serif;
+            font-style: normal;
+            font-size: 20px;
+            color: #D93025;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            color: #333333;
+            font-weight: 10;
+            margin-bottom: 15px;
+        }
+
+        p,
+        input[type="text"] {
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            color: #000000DE;
+        }
+
+        .alignRightButton {
+            color: #000000DE;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            margin: 12px;
+            padding: 6px;
+            float: right;
+        }
+
+        .alignRightButton:hover {
+            color: #585858;
+        }
+
+        .submitbutton {
+            font-weight: bold;
+            background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+            color: white;
+            border: 1px solid #3079ed;
+            font-family: arial, sans-serif;
+            padding: 5px 12px 5px 12px;
+            font-size: 11px;
+            border-radius: 2px;
+            float: right;
+        }
+
+        .width50 {
+            width: 50%
+        }
+
+        .headerBar {
+            background-color: #f1f1f1;
+        }
+
+        .headerBottom {
+            border: 1px solid lightgrey;
+        }
+
+        .bottomText {
+            color: #0000008a !important;
+            font-family: arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .height25 {
+            height: 25px;
+        }
+        .marginLeft {
+            margin-left: 3%;
+        }
+        .marginTop {
+            margin-top: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headerBar">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"
+        width="6%" class="mb-2 mt-2 ml-2">
+        <a href="index.html" class="alignRightButton">Google Search</a>
+    </div>
+    <div class="container-fluid">
+        <h1 class="marginLeft">Advanced search</h1>
+        <hr style="width: 100%!important;">
+        <div class="marginTop marginLeft">
+            <h2 class="">Find pages with...</h2>
+            <form action="https://google.com/search" class="width50">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label height25">
+                        <p>All of these words:</p>
+                    </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control height25" name="as_q">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label height25">
+                        <p>This exact word or phrase:</p>
+                    </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control height25" name="as_epq">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label height25">
+                        <p>One or more of these words:</p>
+                    </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control height25" name="as_oq">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label height25">
+                        <p>None of these words:</p>
+                    </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control height25" name="as_eq">
+                    </div>
+                </div>
+                <input type="submit" value="Google Search" class="submitbutton">
+                <nav class="navbar fixed-bottom navbar-light bg-light headerBottom">
+                    <a class="navbar-brand bottomText" href="#">English</a>
+                </nav>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
